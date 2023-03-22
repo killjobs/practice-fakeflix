@@ -1,0 +1,29 @@
+@import './common.scss';
+
+.poster {
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    align-items: end;
+    &-container {
+        display: grid;
+        margin: 0 auto;
+        padding: 0 4vw 0;
+        align-items: end;
+        &_button{
+            width: 100%;
+            display: flex;
+        }
+        h1 {
+            width: 80%;
+            padding-bottom: 10px;
+            font-size: 28px;
+            margin: 0 auto;
+        }
+        p {
+            line-height: 1.6;
+            text-shadow: 2px 2px 4px rgba(20,20,20,.45);
+        }
+    }
+} 

@@ -1,0 +1,26 @@
+@import './common';
+
+.button-section{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    font-size: 14px;
+    padding: 12px;
+    color: $white-color;
+    border-radius: 6px;
+    &_container{
+        display: flex;
+        margin-left: 10%;
+        svg{
+            margin: 0px 5px;
+        }
+    }
+}
+
+.red-color{
+    background-color: $red-color;
+}
+
+.grey-color{
+    background-color: $grey-color;
+}

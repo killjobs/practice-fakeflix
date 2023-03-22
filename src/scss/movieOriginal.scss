@@ -1,0 +1,21 @@
+@import './common.scss';
+
+.movie-original{
+    margin-bottom: 20px;
+    padding-left: $standard-padding;
+    h2{
+        display: block;
+        font-size: 16px;
+        width: 100%;
+    }   
+    &_images{
+        display: flex;
+        overflow-y: scroll;
+        img{
+            width: 50%;
+            border-radius: 20px;
+            
+            padding-right: 10px;
+        }
+    }
+}
