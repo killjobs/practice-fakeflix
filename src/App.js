@@ -14,7 +14,7 @@ function App() {
   const DISCOUNT_ELEMENTS = 2
 
   if(!movies || !genres) return null
-  console.log(genres)
+
   return (
     <main className='wrapper'>
       { 
@@ -28,6 +28,7 @@ function App() {
             key={index}>
             </MoviePoster>
           )}
+        return null
         })
       }
       {
@@ -41,6 +42,7 @@ function App() {
               </MovieGeneral>
             )
           }
+          return null
         })
       }
       <MovieOriginal>

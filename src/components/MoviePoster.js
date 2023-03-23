@@ -6,16 +6,17 @@ import ButtonSection from "./ButtonSection.js"
 const MoviePoster = ({posterImage,overview,title}) =>{
     const URL_IMAGE = URL_IMAGE_BASE + posterImage
 
-    const stylePoster = {
+    /*const stylePoster = {
         backgroundImage : `url(${URL_IMAGE})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         //backgroundAttachment: 'fixed',
         backgroundPosition: '50%'
-    }
+    }*/
 
     return(
-        <main className="poster" style={stylePoster}>
+        <main className="poster">
+            <img className="poster-wrapper" src={URL_IMAGE} alt={title}/>
             <section className="poster-container">
                 <h1>{title}</h1>
                 <section className="poster-container_button">

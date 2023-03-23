@@ -56,9 +56,7 @@ export const getMovies = async ({typeSelected}) => {
 }
 
 export const getMoviesGenres = async ({genresValue}) => {
-  console.log(genresValue)
   const urlMovies = `${URL_BASE}/${URL_SECTION.URL_GENRES}?api_key=${API_KEY}&with_genres=${genresValue}&language=${LANGUAGE}&page=1`
-  console.log(urlMovies)
   const response = await fetch(urlMovies)
   const json = await response.json()
   const movies = json.results

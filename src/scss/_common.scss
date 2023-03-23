@@ -2,5 +2,20 @@ $white-color : #f2f2f2;
 $black-color : #141414;
 $red-color : #e50914;
 $grey-color : rgba(109,109,110,.7);
-
 $standard-padding : 15px;
+
+$breakpoints: (
+    sm : 375px,
+    md : 768px,
+    lg : 1024px
+);
+
+@mixin media-up($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint){
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "El valor '#{$breakpoint}' no ha sido declarado como breakpoint";
+    }
+}

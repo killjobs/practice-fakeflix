@@ -10,12 +10,17 @@
     }   
     &_images{
         display: flex;
-        overflow-y: scroll;
+        overflow-y: hidden;
         img{
             width: 50%;
             border-radius: 20px;
-            
             padding-right: 10px;
+            @include media-up(md){
+                width: 25%;
+            }
+            @include media-up(lg){
+                width: 20%;
+            }
         }
     }
 }
